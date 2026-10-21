@@ -104,6 +104,6 @@ Perçin, S., Galassi, A., Lagioia, F., Ruggeri, F., Santin, P., Sartor, G., & To
 
 Ruggeri, F., Lagioia, F., Lippi, M., & Torroni, P. (2022). Detecting and explaining unfairness in consumer contracts through memory networks. *Artificial Intelligence and Law, 30*(1), 59–92. https://doi.org/10.1007/s10506-021-09288-2
 
-Sun, C., Qiu, X., Xu, Y., & Huang, X. (2019). *How to fine-tune BERT for text classification?* [Preprint]. arXiv. https://doi.org/10.48550/arXiv.1905.05583
+Sun, C., Qiu, X., Xu, Y., & Huang, X. (2019). How to fine-tune BERT for text classification? In *Chinese Computational Linguistics: 18th China National Conference, CCL 2019* (Lecture Notes in Computer Science, Vol. 11856, pp. 194–206). Springer. https://doi.org/10.1007/978-3-030-32381-3_16
 
 Xu, S., Broda, I., Haddad, R., Negrini, M., & Grabmair, M. (2022). Attack on unfair ToS clause detection: A case study using universal adversarial triggers. *Proceedings of the Natural Legal Language Processing Workshop 2022*, 238–245. https://doi.org/10.18653/v1/2022.nllp-1.21
