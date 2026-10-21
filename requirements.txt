@@ -1,6 +1,13 @@
 datasets
 transformers
+accelerate
 torch
 scikit-learn
+numpy
 pandas
+tqdm
+nltk
+gensim
+sentence-transformers
+bitsandbytes
 gradio
