@@ -1,0 +1,5 @@
+run,model,summaries,class_weights,val_micro_f1,val_macro_f1
+A,legal-bert,True,False,94.8309705561614,76.89997260679908
+B,legal-bert,True,True,95.09483322432962,76.10884583580516
+C,legal-bert,False,False,94.9662235781216,76.57889995584983
+D,bert,True,False,94.43838604143949,75.9517027502403
