@@ -3,6 +3,7 @@
 Detects potentially unfair clauses in online Terms of Service, labels each one with its unfair type, and explains it in plain English using expert legal sources.
 
 MAAI902 Natural Language Processing & LLMs, University of Wollongong in Dubai, Autumn 2026
+
 Author: Lorna Tarabeh
 
 ---
@@ -33,7 +34,6 @@ Pasted Terms of Service
 
 | Notebook | What it does |
 |---|---|
-| `00_ruggeri_check.ipynb` | Explores the Ruggeri et al. explanation files and expert links |
 | `01_explore_data.ipynb` | Class balance, type counts, multi-label sentences |
 | `02_preprocessing.ipynb` | Quality checks, sentence lengths, label checklists, tokenization, and the word-swap augmentation experiment (tested and rejected) |
 | `02b_long_sentences.ipynb` | LLM extractive summaries for sentences over 128 tokens, with exact-copy checks and a hand check |
