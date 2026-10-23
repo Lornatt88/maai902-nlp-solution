@@ -40,7 +40,7 @@ Pasted Terms of Service
 | `03_baseline.ipynb` | TF-IDF + SVM baseline, plus "always fair" and random reference models |
 | `04_legal_bert.ipynb` | Legal-BERT training, comparison runs (class weights, summaries, BERT), 3 seeds, full evaluation |
 | `05_rag_explanations.ipynb` | Knowledge base, retrieval tests, reranker, LLM explanations, hand check |
-| `06_demo.ipynb` | Demo app (in progress) |
+| `06_demo.ipynb` | The full pipeline as a web app (Gradio), tested on recent real Terms of Service |
 
 ## Key results
 
@@ -66,6 +66,19 @@ Pasted Terms of Service
 - Retrieval, tested on 1,712 clauses linked to explanations by experts: a correct explanation is in the top 3 for **67.8%** of clauses with MiniLM + reranker (random guessing: 31.0%).
 - Hand check on one correctly flagged clause per type: relevant sources 8/8, clear 8/8, realistic tips 7/8, stayed within the sources 6/8.
 
+### Real-world test
+
+The demo was run on sections of two recent Terms of Service that are not in the dataset (OpenAI and Bluesky, both written after 2017). It correctly flagged clauses on termination, limitation of liability, arbitration and jurisdiction, and left ordinary sentences unflagged. It missed some newer wording (for example a jury trial waiver), and the LLM occasionally added a small detail not found in the sources.
+
+## Demo
+
+`06_demo.ipynb` turns the pipeline into a web app built with Gradio.
+
+- **Check a document:** paste a Terms of Service and press *Check the fine print*. Each flagged clause appears as a card with its type, the model's confidence, a plain-English explanation ("Why this may be unfair" / "What you can do") and the expert sources it was based on. A second tab shows the full text with flagged clauses highlighted by type.
+- **About:** how the pipeline works, the 8 unfair types in plain words, and the key results.
+
+To run it: open `06_demo.ipynb` in Colab with a T4 GPU and run all cells. The last cell prints a public `gradio.live` link that opens the app in any browser while the notebook is running.
+
 ## How to run
 
 All notebooks run in Google Colab (T4 GPU for notebooks 02b, 04, 05 and the demo). Run them in order. Intermediate results are saved to a Google Drive folder `MyDrive/fine_print_detector/`:
@@ -73,6 +86,8 @@ All notebooks run in Google Colab (T4 GPU for notebooks 02b, 04, 05 and the demo
 - `long_sentence_summaries.csv`, `knowledge_base.csv`
 - `run_results.csv`, `run_results_seeds.csv`, `test_results.csv`, `predictions/`
 - `models/legal_bert_A/` (the trained model, about 440 MB, too large for GitHub)
+
+The small result files are also in the `results/` folder of this repository, so the numbers above can be checked without running anything.
 
 Install dependencies with `pip install -r requirements.txt`.
 
