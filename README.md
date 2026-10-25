@@ -61,8 +61,8 @@ Pasted Terms of Service
 - Legal-BERT clearly outperformed regular BERT on the test set.
 - Class weighting did not improve results, so it is not used in the final model.
 - On the 17 summarized test sentences, both setups were fully correct, so the summaries did not change test scores; they are kept to protect important content in long real-world clauses.
-- Scores on the 1,574 test sentences never seen in training were the same as on the full test set, so the 33 overlapping sentences did not inflate results.
-
+- Scores on the 1,574 test sentences never seen in training were almost the same as on the full test set (micro F1 95.7 vs 95.8, macro F1 82.8 vs 82.8), so the 33 overlapping sentences did not inflate results.
+  
 ### Explanations (RAG)
 
 - Retrieval, tested on 1,712 clauses linked to explanations by experts: a correct explanation is in the top 3 for **67.8%** of clauses with MiniLM + reranker (random guessing: 31.0%).
