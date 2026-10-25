@@ -6,6 +6,8 @@ MAAI902 Natural Language Processing & LLMs, University of Wollongong in Dubai, A
 
 Author: Lorna Tarabeh
 
+Supervisor: Dr. Pallavi Ranjan
+
 ---
 
 ## The problem
