@@ -76,10 +76,14 @@ The demo was run on sections of two recent Terms of Service that are not in the 
 
 `06_demo.ipynb` turns the pipeline into a web app built with Gradio.
 
+![The demo on part of OpenAI's Terms of Service](images/demo_overview_openai.png)
+
+![An explanation card for the $100 liability limit, with its expert sources](images/demo_liability_100_cap.png)
+
 - **Check a document:** paste a Terms of Service and press *Check the fine print*. Each flagged clause appears as a card with its type, the model's confidence, a plain-English explanation ("Why this may be unfair" / "What you can do") and the expert sources it was based on. A second tab shows the full text with flagged clauses highlighted by type.
 - **About:** how the pipeline works, the 8 unfair types in plain words, and the key results.
 
-To run it: open `06_demo.ipynb` in Colab with a T4 GPU and run all cells. The last cell prints a public `gradio.live` link that opens the app in any browser while the notebook is running.
+To run it: open `06_demo.ipynb` in Colab with a T4 GPU and run all cells. The last cell prints a public `gradio.live` link that opens the app in any browser while the notebook is running. If the public link is unavailable, set `share=False` in the last cell to show the app inside Colab instead.
 
 ## How to run
 
